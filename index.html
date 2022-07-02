@@ -9,36 +9,132 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play the kid in the shid.</tw-noscript></noscript></tw-story>
-<tw-storydata name="the kid in the shid" startnode="1" creator="Twine" creator-version="2.3.16" ifid="49EE1F22-DC0D-419B-92A6-623FD9381230" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="275,25" size="100,100">&lt;b&gt;Welcome to &lt;H1&gt;Radical High School&lt;/H1&gt;&lt;/b&gt;
+<tw-storydata name="the kid in the shid" startnode="1" creator="Twine" creator-version="2.3.16" ifid="49EE1F22-DC0D-419B-92A6-623FD9381230" zoom="1" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="683,101" size="100,100">(set: $creditMax to 0)
+(set: $badMax to 0)
+(set: $currentBadThing to &quot;&quot;)
+(set: $victom to &quot;&quot;)
+Welcome to &lt;H1&gt;Radical High School&lt;/H1&gt;
 In the next 3 minutes you will experience the way our school works.
 &lt;i&gt;Scroll down...&lt;/i&gt;
 &lt;img src=&quot;https://github.com/schmooza/studentVoiceInSchool.github.io/blob/main/images/intro.jpg?raw=true&quot;  width=&quot;500&quot; height=&quot;auto&quot;&gt;
 
-&lt;b&gt;&lt;u&gt;Choose your player&lt;/u&gt;&lt;/b&gt;
-
-Yumi is a 10th grade student. 
-[[Yumi-&gt;Yumi01]]
-Max is a 7th grade student. 
-[[Max-&gt;Max01]]
-</tw-passagedata><tw-passagedata pid="2" name="Max01" tags="" position="225,175" size="100,100">(set: $creditMax to 0)
-Max is &quot;hard to control&quot;. He doesn&#39;t read well and avoids school work.
-&lt;img src=&quot;https://github.com/schmooza/studentVoiceInSchool.github.io/blob/main/images/max.jpg?raw=true&quot;  width=&quot;500&quot; height=&quot;auto&quot;&gt;
+[[Start-&gt;Max01]]
+</tw-passagedata><tw-passagedata pid="2" name="Max01" tags="" position="799,323" size="100,100">Max is a 7th grade student. 
+He is &quot;//&#39;&#39;hard to control&#39;&#39;//&quot;. 
+He can&#39;t read good and &#39;&#39;//avoids school//&#39;&#39; work.
+&lt;img src=&quot;https://github.com/schmooza/studentVoiceInSchool.github.io/blob/main/images/max-small.jpg?raw=true&quot;&gt;
 This is the School App
-&lt;img src=&quot;https://github.com/schmooza/studentVoiceInSchool.github.io/blob/main/images/app%20screen.png?raw=true&quot;  width=&quot;500&quot; height=&quot;auto&quot;&gt;
+&lt;img src=&quot;https://github.com/schmooza/studentVoiceInSchool.github.io/blob/main/images/app%20screen02.png?raw=true&quot;  width=&quot;430&quot; height=&quot;auto&quot;&gt;
+
 
 Do you (Max), 
 
-[[Check your Current Balance-&gt;Credit]]
-[[Check the Notices-&gt;Notices]]
-[[Check the jobs-&gt;Jobs]]
-[[Hit the nearest student-&gt;minus]]</tw-passagedata><tw-passagedata pid="3" name="Yumi01" tags="" position="375,175" size="100,100">Yumi is &quot;not engaged in school&quot;. She doesn&#39;t fit in and is bullied. 
-&lt;img src=&quot;https://github.com/schmooza/studentVoiceInSchool.github.io/blob/main/images/yumi.jpg?raw=true&quot;  width=&quot;500&quot; height=&quot;auto&quot;&gt;
+[[See Credit-&gt;Credit]]
+[[See Notices-&gt;Notices]]
+[[Create a Job-&gt;Jobs]]
+[[See Rewards-&gt;Rewards]]
+[[Hit the nearest student!!!-&gt;minus]](set: $currentBadThing to &quot;punch&quot;)(set: $victom to &quot;student&quot;)</tw-passagedata><tw-passagedata pid="3" name="Credit" tags="" position="465,294" size="100,100">You have $$creditMax credit.
+&#39;&#39;//(If credit = $0 ....try doing some jobs.) 
+//&#39;&#39;
+[[Why do I need credit?-&gt;CreditFAQ]]
+[[&#39;&#39;//back//&#39;&#39;-&gt;Max01]] </tw-passagedata><tw-passagedata pid="4" name="Notices" tags="" position="470,408" size="100,100">&#39;&#39;Monday Period 2: English&#39;&#39;
+Homework not complete
+-5 credit
 
-&lt;img src=&quot;https://github.com/schmooza/studentVoiceInSchool.github.io/blob/main/images/app%20screen.png?raw=true&quot;  width=&quot;500&quot; height=&quot;auto&quot;&gt;
 
-</tw-passagedata><tw-passagedata pid="4" name="Credit" tags="" position="0,325" size="100,100">You have $$creditMax credit, try doing some jobs. 
-[[back-&gt;Max01]] 
-[[why do I need credit?-&gt;CreditFAQ]]</tw-passagedata><tw-passagedata pid="5" name="Notices" tags="" position="150,325" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="6" name="Jobs" tags="" position="300,325" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="7" name="minus" tags="" position="450,325" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="8" name="CreditFAQ" tags="" position="0,475" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+&#39;&#39;Tuesday Period 5: Art&#39;&#39;
+Cleaning the room and helping the teacher
++5 credit
+
+[[Back-&gt;Max01]] </tw-passagedata><tw-passagedata pid="5" name="Jobs" tags="" position="1226,469" size="100,100">
+For example
+Job 1
+&#39;&#39;2.5 Credits&#39;&#39;
+Collect a bag of rubbish
+1 day
+
+Job 2
+&#39;&#39;15 Credits&#39;&#39;
+Clean the fishtank
+5 days
+
+
+&#39;&#39;Student Designed Job&#39;&#39;
+print $task
+print $duration
+print $userDefinedCredits
+
+
+&#39;&#39;//* Note, credit values change based on supply and demand.//&#39;&#39;
+
+[[Create Job-&gt;JobStudentChoice]]
+[[Say something nasty to the teacher.-&gt;abuseTeacher]](set: $currentBadThing to &quot;your a bad teacher and I used your incorrectly because of you. &quot;)(set: $victom to &quot;Mr. Simmonds&quot;)</tw-passagedata><tw-passagedata pid="6" name="minus" tags="" position="380,160" size="100,100">
+(set: $badMax +=1)
+
+Bad points = $badMax
+[[Back-&gt;Max01]]
+(if:$badMax is 1)[You $currentBadThing the $victom.]
+(if:$badMax is 2)[You scream and $currentBadThing the $victom.]
+(if:$badMax is &gt;2)[(go-to: &quot;The End&quot;)]</tw-passagedata><tw-passagedata pid="7" name="CreditFAQ" tags="" position="229,293" size="100,100">Each student starts the year with 20 credits.
+Credit buys extra things. You don&#39;t need credit but it can be helpful.
+[[&#39;&#39;//Back//&#39;&#39;-&gt;Credit]] </tw-passagedata><tw-passagedata pid="8" name="The End" tags="" position="228,116" size="100,100">#//&#39;&#39;Game Over&#39;&#39;//
+Thank you for playing.
+Please send feedback to
+ashton.simmonds@gmail.com
+(What went well?, what was tricky?, what would you improve?)
+
+[[Play again?-&gt;Intro]]</tw-passagedata><tw-passagedata pid="9" name="Rewards" tags="" position="455,541" size="100,100">&#39;&#39;5 Credits&#39;&#39;
+Get extra help with homework (study time)
+
+&#39;&#39;10 Credits&#39;&#39;
+Borrow 1 new book from the library
+
+&#39;&#39;20 Credits&#39;&#39;
+Free muffin from cafeteria
+
+[[Spend 5 Credits-&gt;Homework]]
+[[Spend 10 Credits-&gt;Borrow]]
+[[Spend 20 Credits-&gt;Muffin]]</tw-passagedata><tw-passagedata pid="10" name="JobStudentChoice" tags="" position="1197,705" size="100,100">Task
+(input-box:2bind $task,&quot;=XX=&quot;,&quot;&quot;)
+Days
+(input-box:2bind $duration,&quot;=XX=&quot;,&quot;&quot;)
+Credits
+(input-box:2bind $userDefinedCredits,&quot;=XX=&quot;,&quot;&quot;)
+
+
+[[Start task now! -&gt;JobStudentChoiceTask]] 
+[[Back-&gt;Jobs]]</tw-passagedata><tw-passagedata pid="11" name="abuseTeacher" tags="" position="1319,703" size="100,100">(set: $badMax +=1)
+
+Bad points = $badMax
+[[Back-&gt;Jobs]]
+(if:$badMax is 1)[Ha,ha,ha $victom $currentBadThing]
+(if:$badMax is 2)[Hey $victom my mum says $currentBadThing]
+(if:$badMax is &gt; 2)[(go-to: &quot;The End&quot;)]</tw-passagedata><tw-passagedata pid="12" name="JobStudentChoiceTask" tags="" position="1198,856" size="100,100">(set: $durationNum to (num: $duration))
+(set: $userDefinedCreditsNum to (num: $userDefinedCredits))
+
+
+(if:$userDefinedCreditsNum is &gt; 20)[(set: $badMax +=1) Max, you decided to $task for $durationNum days. Unfortunately the $userDefinedCredits credit value was too high for this job. We are disapointed in you Max.
+Bad points = $badMax
+Credit = $creditMax]
+
+
+(else:)[(set:$creditMax = $creditMax + $userDefinedCreditsNum) Max, you decided to $task for $durationNum days. The $userDefinedCredits credits have been added to your account.
+Bad points = $badMax 
+Credit = $creditMax]
+
+[[next-&gt;Max01]] </tw-passagedata><tw-passagedata pid="13" name="Homework" tags="" position="319,671" size="100,100">(if:$creditMax &gt;4)[(set: $creditMax = $creditMax -5) Mr. Simmonds helps you pass the next coding test]
+
+(else:)[Credit = $currentCredit , Sorry you don&#39;t have enough credit!!! Do a job.]
+
+[[next-&gt;Max01]] </tw-passagedata><tw-passagedata pid="14" name="Borrow" tags="" position="467,671" size="100,100">(if:$creditMax &gt;9)[(set:$creditMax = $creditMax -10) You borrow the latest Steven King Novel and can not sleep for a week.]
+
+(else:)[Credit = $currentCredit , Sorry you don&#39;t have enough credit!!! Do a job.]
+
+[[next-&gt;Max01]] </tw-passagedata><tw-passagedata pid="15" name="Muffin" tags="" position="619,671" size="100,100">(if:$creditMax &gt;19)[(set:$creditMax = $creditMax -20) The muffin looks yummy but as you bite into it you hear the bell ring...]
+
+(else:)[Credit = $currentCredit , Sorry you don&#39;t have enough credit!!! Do a job.]
+
+[[next-&gt;Max01]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
