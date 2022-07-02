@@ -46,7 +46,7 @@ Homework not complete
 Cleaning the room and helping the teacher
 +5 credit
 
-[[Back-&gt;Max01]] </tw-passagedata><tw-passagedata pid="5" name="Jobs" tags="" position="1226,469" size="100,100">_____________________________________________________________
+[[Back-&gt;Max01]] </tw-passagedata><tw-passagedata pid="5" name="Jobs" tags="" position="1225,474" size="100,100">_____________________________________________________________
 //For example//
 Job: Collect a bag of rubbish
 Day/s: 1
@@ -59,9 +59,9 @@ Day/s: 5 days
 _____________________________________________________________
 
 &#39;&#39;Student Designed Job&#39;&#39;
-print $task
-print $duration
-print $userDefinedCredits
+$task
+$duration
+$userDefinedCredits
 _____________________________________________________________
 _____________________________________________________________
 
@@ -69,7 +69,7 @@ _____________________________________________________________
 &#39;&#39;//* Note, credit values change based on supply and demand.//&#39;&#39;
 
 [[Create Job-&gt;JobStudentChoice]]
-[[Say something nasty to the teacher.-&gt;abuseTeacher]](set: $currentBadThing to &quot;your a bad teacher and I used your incorrectly because of you. &quot;)(set: $victom to &quot;Mr. Simmonds&quot;)</tw-passagedata><tw-passagedata pid="6" name="minus" tags="" position="380,160" size="100,100">
+[[Say something nasty to the teacher.-&gt;abuseTeacher]](set: $currentBadThing to &quot;your a bad teacher and I used your incorrectly because of your&#39;re stupid lessons. &quot;)(set: $victom to &quot;Mr. Simmonds&quot;)</tw-passagedata><tw-passagedata pid="6" name="minus" tags="" position="380,160" size="100,100">
 (set: $badMax +=1)
 
 Bad points = $badMax
@@ -104,7 +104,7 @@ Credits
 
 
 [[Start task now! -&gt;JobStudentChoiceTask]] 
-[[Back-&gt;Jobs]]</tw-passagedata><tw-passagedata pid="11" name="abuseTeacher" tags="" position="1319,703" size="100,100">(set: $badMax +=1)
+[[Back-&gt;Jobs]]</tw-passagedata><tw-passagedata pid="11" name="abuseTeacher" tags="" position="1319,704" size="100,100">(set: $badMax +=1)
 
 Bad points = $badMax
 [[Back-&gt;Jobs]]
