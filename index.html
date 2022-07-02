@@ -48,15 +48,16 @@ Cleaning the room and helping the teacher
 
 [[Back-&gt;Max01]] </tw-passagedata><tw-passagedata pid="5" name="Jobs" tags="" position="1226,469" size="100,100">
 For example
-Job 1
-&#39;&#39;2.5 Credits&#39;&#39;
-Collect a bag of rubbish
-1 day
+Job: Collect a bag of rubbish
+Day/s: 1
+&#39;&#39;Credits: 2.5 &#39;&#39;
 
-Job 2
-&#39;&#39;15 Credits&#39;&#39;
-Clean the fishtank
-5 days
+
+Job 2: Clean the fishtank
+Day/s: 5 days
+&#39;&#39;Credits: 10&#39;&#39;
+
+
 
 
 &#39;&#39;Student Designed Job&#39;&#39;
@@ -83,7 +84,7 @@ Please send feedback to
 ashton.simmonds@gmail.com
 (What went well?, what was tricky?, what would you improve?)
 
-[[Play again?-&gt;Intro]]</tw-passagedata><tw-passagedata pid="9" name="Rewards" tags="" position="455,541" size="100,100">&#39;&#39;5 Credits&#39;&#39;
+[[Play again?-&gt;Intro]]</tw-passagedata><tw-passagedata pid="9" name="Rewards" tags="" position="804,881" size="100,100">&#39;&#39;5 Credits&#39;&#39;
 Get extra help with homework (study time)
 
 &#39;&#39;10 Credits&#39;&#39;
@@ -94,7 +95,7 @@ Free muffin from cafeteria
 
 [[Spend 5 Credits-&gt;Homework]]
 [[Spend 10 Credits-&gt;Borrow]]
-[[Spend 20 Credits-&gt;Muffin]]</tw-passagedata><tw-passagedata pid="10" name="JobStudentChoice" tags="" position="1197,705" size="100,100">Task
+[[Spend 20 Credits-&gt;Muffin]]</tw-passagedata><tw-passagedata pid="10" name="JobStudentChoice" tags="" position="1197,704" size="100,100">Task
 (input-box:2bind $task,&quot;=XX=&quot;,&quot;&quot;)
 Days
 (input-box:2bind $duration,&quot;=XX=&quot;,&quot;&quot;)
@@ -109,7 +110,7 @@ Bad points = $badMax
 [[Back-&gt;Jobs]]
 (if:$badMax is 1)[Ha,ha,ha $victom $currentBadThing]
 (if:$badMax is 2)[Hey $victom my mum says $currentBadThing]
-(if:$badMax is &gt; 2)[(go-to: &quot;The End&quot;)]</tw-passagedata><tw-passagedata pid="12" name="JobStudentChoiceTask" tags="" position="1198,856" size="100,100">(set: $durationNum to (num: $duration))
+(if:$badMax is &gt; 2)[(go-to: &quot;The End&quot;)]</tw-passagedata><tw-passagedata pid="12" name="JobStudentChoiceTask" tags="" position="1028,832" size="100,100">(set: $durationNum to (num: $duration))
 (set: $userDefinedCreditsNum to (num: $userDefinedCredits))
 
 
